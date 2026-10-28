@@ -6,7 +6,7 @@
 
 A dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.
 
-[🌐 Live Demo](YOUR_LIVE_LINK_HERE) 
+[🌐 Live Demo](https://a6-fit-log-workout.vercel.app/) 
 
 </div>
 
