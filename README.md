@@ -50,8 +50,10 @@ src/
 │   ├── not-found.tsx         # 404 page
 │   ├── globals.css
 │   ├── workout/[id]/page.tsx # Workout details
-│   └── my-plan/page.tsx      # My Plan (Today's Plan / Saved)
-├── components/               # Navbar, Hero, WorkoutCard, LibrarySection, Footer
+│   └── my-plan               # My Plan (Today's Plan / Saved)
+     └──  loading.tsx
+     └──  page.tsx
+├── components/               # Navbar, Hero, Icons, WorkoutCard, WorkoutDetails, WorkoutStats, LibrarySection, Footer
 ├── context/PlanContext.tsx   # Plan + Saved state, metrics, localStorage
 ├── types/index.ts            # Workout and PlanWorkout types
 └── utils/api.ts              # API fetch functions
@@ -62,7 +64,3 @@ src/
 Deployed on **Vercel**. Reloading any route works without errors.
 
 ---
-
-<div align="center">
-© 2026 FitLog — Workout Library. Train hard, log honest. 💪
-</div>
