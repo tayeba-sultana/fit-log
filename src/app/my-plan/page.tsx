@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { usePlan } from "@/context/PlanContext";
 import WorkoutStats from "@/components/WorkoutStats";
@@ -134,7 +135,12 @@ function MyPlanContent() {
                     aria-label={`View ${item.name} details`}
                   >
                     {item.image ? (
-                      <img src={item.image} alt={item.name} />
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={160}
+                        height={120}
+                      />
                     ) : (
                       <span>FITLOG</span>
                     )}

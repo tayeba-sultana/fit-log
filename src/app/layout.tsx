@@ -1,5 +1,5 @@
 
-import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
@@ -27,7 +27,10 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${oswald.variable}`}>
       <body>
         <PlanProvider>
-          <Navbar />
+          <Suspense fallback={null}>
+    <Navbar />
+  </Suspense>
+          
           <main className="main-content">{children}</main>
           <Footer />
 
