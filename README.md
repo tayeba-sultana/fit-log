@@ -6,7 +6,7 @@
 
 A dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.
 
-[🌐 Live Demo](YOUR_LIVE_LINK_HERE) · [💻 GitHub Repo](YOUR_GITHUB_LINK_HERE)
+[🌐 Live Demo](YOUR_LIVE_LINK_HERE) 
 
 </div>
 
@@ -39,27 +39,6 @@ FitLog is a responsive workout-planning web app. Browse a library of twelve lift
 
 **Also included:** persistent data via localStorage, a custom 404 page, and a fully responsive layout for mobile, tablet and desktop.
 
-## 🚀 Getting Started
-
-```bash
-# 1. Clone the repository
-git clone YOUR_GITHUB_LINK_HERE
-cd fitlog
-
-# 2. Install dependencies
-npm install
-
-# 3. Start the dev server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-```bash
-# Production build
-npm run build
-npm start
-```
 
 ## 📁 Project Structure
 
