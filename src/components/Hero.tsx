@@ -7,9 +7,7 @@ export default function Hero() {
     <section className="hero-section">
       <div className="hero-grid">
         <div className="hero-copy">
-          <div className="eyebrow">
-            WORKOUT LIBRARY
-          </div>
+          <p className="eyebrow">Workout Library</p>
 
           <h1 className="hero-title">
             TRAIN WITH
@@ -20,14 +18,13 @@ export default function Hero() {
           </h1>
 
           <p className="hero-description">
-            Your training. Your progress. Your rules.
-            Build your workout plan, track every lift,
-            and stay consistent with FitLog.
+            FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
+            into today&apos;s plan, and watch the week&apos;s work add up.
           </p>
 
           <div className="hero-actions">
             <a href="#library" className="button button-primary">
-              BROWSE WORKOUTS 
+              Browse workouts
             </a>
           </div>
 
