@@ -134,7 +134,6 @@ function MyPlanContent() {
                     aria-label={`View ${item.name} details`}
                   >
                     {item.image ? (
-                      // eslint-disable-next-line @next/next/no-img-element
                       <img src={item.image} alt={item.name} />
                     ) : (
                       <span>FITLOG</span>

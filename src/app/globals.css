@@ -1,9 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
-/* =========================================================
-   FitLog — styles aligned to the Figma file
-   Tokens come from the Figma frames (Home / Details / My Plan).
-   ========================================================= */
 
 :root {
   --bg: #0c0d10;
@@ -47,7 +43,7 @@ h1, h2, h3, p { margin: 0; }
 .main-content { min-height: 70vh; }
 .icon { flex: none; }
 
-/* Page containers (Figma: 24px side padding on Home/Details, 48px on My Plan) */
+
 .container {
   width: 100%;
   max-width: 1280px;
@@ -61,7 +57,7 @@ h1, h2, h3, p { margin: 0; }
   padding-top: 48px;
 }
 
-/* ---------- Header ---------- */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -129,7 +125,6 @@ h1, h2, h3, p { margin: 0; }
 .plan-pill .counter-number { background: var(--accent); color: #000; font-weight: 700; }
 .saved-pill .counter-number { border: 1px solid #2d313b; color: var(--text-soft); }
 
-/* ---------- Buttons ---------- */
 .button {
   display: inline-flex;
   justify-content: center;
@@ -146,7 +141,6 @@ h1, h2, h3, p { margin: 0; }
 .button-outline { background: transparent; border-color: #374151; color: var(--text-soft); }
 .button-outline:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 
-/* ---------- Hero ---------- */
 .hero-grid {
   display: flex;
   justify-content: space-between;
@@ -181,7 +175,6 @@ h1, h2, h3, p { margin: 0; }
 .hero-visual { flex: none; }
 .hero-athlete { width: 334px; height: 334px; object-fit: cover; border-radius: 12px; }
 
-/* ---------- Library ---------- */
 .library-section { display: flex; flex-direction: column; gap: 32px; }
 .section-header { display: flex; flex-direction: column; gap: 4px; }
 .section-title, .page-title {
@@ -196,7 +189,6 @@ h1, h2, h3, p { margin: 0; }
 
 .workout-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 
-/* ---------- Workout card (Figma: 395 x 368, r16, image 192) ---------- */
 .workout-card {
   display: flex;
   flex-direction: column;
@@ -209,9 +201,8 @@ h1, h2, h3, p { margin: 0; }
 }
 .workout-card:hover { transform: translateY(-2px); border-color: rgb(194 248 0 / 45%); }
 .workout-card-image-wrap { position: relative; flex: none; height: 192px; overflow: hidden; background: var(--panel-2); }
-/* .workout-card-image { object-fit: cover; object-position: top; transition: transform 300ms ease; } */
+
 .workout-card-image { object-fit: cover; transition: transform 300ms ease; }
-/* .workout-card-image { object-fit: contain; transition: transform 300ms ease; } */
 .workout-card:hover .workout-card-image { transform: scale(1.04); }
 
 .workout-card-body {
@@ -256,7 +247,6 @@ h1, h2, h3, p { margin: 0; }
 }
 .stat { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; line-height: 16px; }
 
-/* ---------- States ---------- */
 .skeleton-card { height: 368px; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; animation: pulse 1.4s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: 0.55; } }
 .route-loading, .plan-loading {
@@ -302,7 +292,6 @@ h1, h2, h3, p { margin: 0; }
 .empty-state p { margin-bottom: 24px; color: #a1a1aa; font-size: 12px; line-height: 16px; }
 .empty-state .button { height: 36px; padding: 10px 24px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: -0.3px; }
 
-/* ---------- Workout details (Figma: 588 + 56 gap + 588) ---------- */
 .details-section { padding-top: 48px; }
 .back-link { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 24px; color: var(--muted); font-size: 12px; font-weight: 500; }
 .back-link:hover { color: var(--accent); }
@@ -346,7 +335,6 @@ h1, h2, h3, p { margin: 0; }
 .details-actions .button-primary { font-weight: 600; color: #0f1115; }
 .details-actions .button-outline { font-weight: 500; color: #e5e7eb; }
 
-/* ---------- My Plan (Figma: 48px side padding, 24px section gap) ---------- */
 .plan-page { display: flex; flex-direction: column; gap: 24px; padding-top: 40px; padding-bottom: 40px; }
 .plan-page.container { padding-left: 48px; padding-right: 48px; }
 .plan-heading { display: flex; flex-direction: column; gap: 8px; }
@@ -399,21 +387,18 @@ h1, h2, h3, p { margin: 0; }
 .remove-button { width: 28px; height: 28px; display: grid; place-items: center; padding: 0; background: transparent; border: 0; border-radius: 6px; color: #6b7280; }
 .remove-button:hover { color: #ff8e8e; }
 
-/* ---------- 404 ---------- */
 .not-found { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 96px; padding-bottom: 96px; }
 .not-found h1 { font-family: var(--font-display); font-size: clamp(70px, 11vw, 140px); line-height: 0.9; }
 .not-found h2 { font-family: var(--font-display); font-size: 24px; }
 .not-found .button { height: 40px; padding: 0 24px; border-radius: 6px; font-size: 12px; font-weight: 700; }
 .muted-text { color: var(--muted); }
 
-/* ---------- Footer (Figma: 64px top margin, 40px padding) ---------- */
 .site-footer { margin-top: 64px; background: #090a0d; border-top: 1px solid #1a1d24; }
 .footer-inner { width: 100%; max-width: 1280px; margin: 0 auto; padding: 40px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
 .footer-brand { gap: 8px; font-size: 14px; letter-spacing: 0.7px; line-height: 20px; }
 .footer-brand .brand-logo { width: 20px; height: 20px; }
 .footer-inner > p { color: #6b7280; font-size: 12px; line-height: 16px; }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
   .workout-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .details-layout { gap: 32px; }
@@ -425,13 +410,21 @@ h1, h2, h3, p { margin: 0; }
 @media (max-width: 700px) {
   .container, .plan-page.container { padding-left: 16px; padding-right: 16px; }
   .page-main { gap: 40px; padding-top: 24px; }
-  .nav-inner { height: 64px; grid-template-columns: 1fr auto; padding: 0 16px; }
-  .desktop-nav {
-    position: fixed; right: 0; bottom: 0; left: 0; z-index: 60;
-    justify-content: space-around;
-    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-    background: #0c0d10; border-top: 1px solid var(--line);
-  }
+  .site-header { background: #0c0d10; backdrop-filter: none; }
+  
+   .nav-inner {
+  height: auto;
+  grid-template-columns: 1fr auto;
+  row-gap: 10px;
+  padding: 12px 16px;
+}
+.brand { grid-column: 1; grid-row: 1; }
+.nav-actions { grid-column: 2; grid-row: 1; gap: 14px; }
+.desktop-nav {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-content: center;
+}
   .nav-actions { gap: 14px; }
   .hero-grid { flex-direction: column; align-items: flex-start; min-height: 0; padding: 24px 20px; }
   .hero-visual { align-self: center; }
@@ -450,7 +443,8 @@ h1, h2, h3, p { margin: 0; }
   .plan-item { flex-direction: column; align-items: stretch; }
   .plan-item-image { width: 96px; height: 80px; }
   .plan-item-actions { flex-wrap: wrap; }
-  .footer-inner { padding-bottom: 90px; }
+  
+  .footer-inner { padding-bottom: 40px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
